@@ -36,7 +36,6 @@ const [message, setMessage] = useState("");
                localStorage.setItem('access', data.access);
                 localStorage.setItem('refresh', data.refresh);
               
-              console.log(data)
               })
   }
 
