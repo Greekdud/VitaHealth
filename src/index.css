@@ -1,13 +1,25 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'proxima nova', sans-serif;
+    src: url('./Assets/Proxima-nova.otf');
+}
+/* font-family: 'proxima nova', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+    font-family: 'proxima nova', sans-serif;
+}
+h3,h4 {
+    font-family: 'Clash Display', sans-serif;
+}
+
+.container {
+    /* max-width: 1308px;
+    width: 100%;
+    margin: 0 auto; */
+    /* padding: 0 20px; */
 }

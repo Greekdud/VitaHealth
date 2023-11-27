@@ -1,0 +1,78 @@
+.welcome-main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+.welcome-left{
+    height: 100%;
+    width: 15%;
+    background-color: #1A6B27;
+
+}
+
+
+.welcome-right {
+    height: 100%;
+    /* border: 1px solid blue; */
+    text-align: center;
+    width: 85%;
+}
+
+.welcome-img-container-left{
+    width: 200px;
+    margin: -25px auto 0;
+}
+
+.welcome-img-container-right{
+    width: 100px;
+    margin: 110px auto 34px;
+}
+.welcome-img-right{
+width: 100%;
+}
+
+.img-small-container h3{
+    color: #000;
+        font-family: 'proxima nova', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+}
+
+.welcome-cards{
+    width: 1000px;
+    margin: 73px auto 347.19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 92px;
+}
+
+.welcome-card{
+    text-align: left;
+    width: 272px;
+    /* height: 146px; */
+    box-shadow: 0px 24.80243px 36.3769px 0px rgba(200, 200, 200, 0.25);
+    border: 0.413px solid #545454;
+    padding: 41.337px 24.802px;
+    border-radius: 16.5px;
+}
+
+.welcome-card h4 {
+    margin: 12px 0;
+    color: #1B1B1B;
+    font-family: Clash Display;
+    font-size: 16.535px;
+    font-weight: 600;
+}
+    .welcome-card p {
+    width: 222px;
+}
+
+.welcome-right-bottom{
+    width: 1000px;
+     height: 60px;
+    border-radius: 40px;
+     border: 1px solid #545454;
+}

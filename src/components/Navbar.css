@@ -1,0 +1,38 @@
+.main-nav {
+    height: 98px;
+    max-width: 1308px;
+    width: 100%;
+    margin: 0 auto 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background-color: white;
+    font-family: 'proxima nova', sans-serif;
+    position: sticky;
+     top: 0;
+
+}
+
+.logo-img-container{
+    width: 200px;
+    text-align: left;
+    margin-left: -50px;
+}
+
+.nav-logo {
+    width: 100%;
+}
+.nav-titles{
+    width: 344px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-family: 'proxima nova', sans-serif;;
+}

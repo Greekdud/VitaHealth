@@ -1,0 +1,136 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 95px;
+}
+
+.separator {
+    align-self: center;
+    width: 1px;
+    height: 436px;
+    background-color: #E5E7EB;
+}
+
+.img-container {
+    width: 719px;
+    margin: 0 auto;
+    background: var(--foundation-green-green-800, #228C33);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.word-div {
+    color: #fff;
+    width: 418px;
+    text-align: center;
+    margin-bottom: 122px;
+}
+
+
+.word-div h4 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.word-div p {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 9px;
+
+}
+
+.img-div {
+    width: 418px;
+    margin: 96px auto 48px;
+}
+
+.LR-img {
+    width: 100%;
+}
+
+.account-container {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.account-container h3 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    width: 397px;
+    margin-left: 10px;
+}
+
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 5px;
+
+}
+
+.input {
+    height: 42px;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid #e4e7eb;
+    padding: 13px 27px;
+}
+
+.input::placeholder {
+    color: #BEBEBE;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 53px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #e4e7eb;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-register {
+    background-color: #2BB542;
+}
+
+.btn-google {
+    border: 1px solid #BEBEBE;
+    background-color: #fff;
+    color: black;
+}
+
+.btn-fb {
+    background-color: #385898;
+    margin-top: 25px;
+}
+
+.sign-in {
+    text-align: center;
+    margin: 26px 0 51px;
+}
+
+.span {
+
+    color: #2BB542;
+}
+
+.label {
+    font-family: 'proxima nova', sans-serif;
+    margin-top: 15px;
+}
