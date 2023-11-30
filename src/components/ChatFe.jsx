@@ -7,9 +7,13 @@ import './Chat.css';
 import { Link } from 'react-router-dom'
 import Eclipse from '../Assets/Ellipse.svg'
 import { baseUrl } from './baseUrl';
+import axios from 'axios';
 
 const API_KEY = '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'
-const API_URL = 'https://api.openai.com/v1/chat/completions'
+const API_URL = 'https://api.openai.com/v1/engines/davinci/completions'
+const headers = {
+    Authorization: API_KEY
+}
 
 const ChatFe = () => {
 const [input, setInput] = useState("");
@@ -17,28 +21,40 @@ const [message, setMessage] = useState("");
 
  const handleSend = (e) => {
     e.preventDefault();
-    
-    
-    const url = baseUrl + 'api/chat/session/{id}/interact/';
 
-       fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${API_KEY}`,
-        },
-        body: JSON.stringify({
-                model:"gpt-3..5-turbo",
-                message:[{role:"user", content: setMessage}],
-            }),
-      })
-       .then((response)=> {
-                return response.json(); 
-              })
-              .then( (data) => {
-                // localStorage.setItem('token', data);
-              console.log(data)
-              })
+    axios 
+    .post(API_URL, {input}, {headers})
+    .then((res) => {
+        setMessage(res.data.message);
+    })
+    .catch((err) => {
+        console.error(err);
+    });
+
+
+
+
+
+//     const url = baseUrl + 'api/chat/session/{id}/interact/';
+
+//        fetch(url, {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           Authorization: `Token ${API_KEY}`,
+//         },
+//         body: JSON.stringify({
+//                 model:"gpt-3..5-turbo",
+//                 message:[{role:"user", content: setMessage}],
+//             }),
+//       })
+//        .then((response)=> {
+//                 return response.json(); 
+//               })
+//               .then( (data) => {
+//                 // localStorage.setItem('token', data);
+//               console.log(data)
+//               })
   }
 
 
@@ -57,7 +73,7 @@ const [message, setMessage] = useState("");
 
                         <div className='chat-user-input'> 
                           <div><textarea className='chat-input' name="message" id="" cols="110" rows="10"  value={message} onChange={(e) => setMessage(e.target.value)} >{message}</textarea></div>
-                            {/* <div className='user-message'>this is a message</div> */}
+                           
                                 <div><img src={Eclipse} alt="" /></div>
                         </div>
                         <div className='chat-admin-input'> 

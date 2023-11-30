@@ -102,11 +102,17 @@
     background-color: #ECFFEF;
 }
     .chat-input{
+        width: 45rem;
+        /* height: 10rem; */
        
         background-color: #ECFFEF;
         border: #ECFFEF;
         border-radius: 15px;
     
+    }
+
+    .chat-input::placeholder{
+        padding: 12rem;
     }
 
 
@@ -131,3 +137,37 @@
     border: 1px solid #545454;
     border-radius: 30px;
 }
+.input-container {
+    /* border: 1px solid red; */
+    border: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    width: 70vw;
+    height: 3rem;
+}
+.btn-input {
+    border: none;
+    border-radius: 10px;
+    width: 10rem;
+    background-color: #2bb542;
+    color: white;
+    cursor: pointer;
+}
+.chat-input-type{
+    width: 45rem;
+    border: none;
+    border: 1px solid #545454;
+    border-radius: 15px;
+}
+.chat-input-type:placeholder{
+    padding-right: 5rem;
+}
+
+.chat-image{
+    margin-left: 3rem;
+    /* border: 1px solid red; */
+}
+

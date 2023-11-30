@@ -15,7 +15,6 @@
 
 .welcome-right {
     height: 100%;
-    /* border: 1px solid blue; */
     text-align: center;
     width: 85%;
 }
@@ -31,6 +30,9 @@
 }
 .welcome-img-right{
 width: 100%;
+}
+.welcome-card-p {
+font-family: 'proxima nova', sans-serif;
 }
 
 .img-small-container h3{

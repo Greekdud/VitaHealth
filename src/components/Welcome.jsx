@@ -48,9 +48,9 @@ function Card () {
 
                       <img src={activity} alt="" />
                       <h4>Headline Here</h4>
-                        <p>Hello! Welcome to VitaHealth! We got you covered? Have any health complaint?Message the Doctor now!
+                        <p className='welcome-card-p'>Hello! Welcome to VitaHealth! We got you covered? Have any health complaint?Message Kosi now- Our Highly trained Bot!
                           <br />
-                          <Link  to='/chat'>
+                          <Link  to='/chatbox'>
                      CLICK HERE
                      </Link> </p>
                   </div>
